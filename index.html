@@ -22,24 +22,30 @@
   <body>
 
     <div class="container">
-      <button class="btn-light col-md-1" id="home-button" onclick="homeButton()">Home</button>
+      <button class="btn-light col-md-1 col-sm-2" id="home-button" onclick="homeButton()">Home</button>
       <div class="jumbotron">
+
+        <!-- Home Section -->
        
         <h1 class="name display-4" id="name">Caitlin White</h1>
         <p class="name-description lead" id="description">
-          Full-stack Software Engineer with 3 years of experience
+          Full-Stack Software Engineer with 3 years of experience
         </p>
+
+        <!-- About Section -->
+        <h1 class="name display-4" id="about-header" style="display:none;">About Me</h1>
         <img src="pictures/Caitlin Photo.jpg.JPG" style="display: none;" id="caitlin-photo">
-        <p class="about-description lead" id="about-info" style="display:none">My name is Caitlin White and I am originally from Enfield, Connecticut. I moved to Hollywood, Florida last year and currently work at Total Wine as a Wine Sales Associate. I have a degree in Performance Theatre from Western Connecticut State University, however I am looking forward to furthering my education and starting a career in the tech field!
+        <p class="about-description lead" id="about-info" style="display:none">My name is Caitlin White and I am originally from Enfield, Connecticut. I moved to Hollywood, Florida last year and currently work at Total Wine as a Wine Sales Associate. I have a degree in Performance Theatre and Theatre Arts Management from Western Connecticut State University, however I am looking forward to furthering my education and starting a career in the tech field!
           I wrote my first line of code in seventh grade on Myspace! I learned how to make text bold, italic and underlined, and learned how to change the color of my profile. I also took CS100 at Western Connecticut State University where I built my very first website! However, I wanted to gain greater knowledge and actually become employable as a software engineer!
          </p>
 
 
 
-
+        <!-- Portfolio Section -->
+        <!-- One image section commented out so I can add my next project info in easily!-->
 
          <div id="portfolio-section" style="display:none;">
-         <h1 class="name display-4" id="portfolio-title">Caitlin's Portfolio</h1>
+         <h1 class="name display-4" id="portfolio-title">Portfolio</h1>
         
         <div id="carouselExampleCaptions" class="images carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -89,109 +95,52 @@
         </div>
       </div> 
 
+
+      <!-- Contact Section -->
+
+      <div id="contact-header" style="display:none;" >
+        <h1 class="name display-4" id="portfolio-title">Contact Me</h1>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 contact-section" style="display:none;" id="contact-section">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="pictures/githubimage.png" class="card-img-top contact-images" alt="githubimage">
+          <div class="card-body">
+            <h5 class="card-title">GitHub</h5>
+            <a href="https://github.com/caitlinritawhite" target="blank" class="github card-text">Click here to view my GitHub profile</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="pictures/gmailimage.png" class="card-img-top contact-images" alt="gmailimage">
+            <div class="card-body">
+              <h5 class="card-title">Email</h5>
+              <a href="mailto: caitlinritawhite@gmail.com" class="github card-text">Click here to send me an email at CaitlinRitaWhite@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <img src="pictures/phoneimage.png" class="card-img-top contact-images" alt="phoneimage">
+            <div class="card-body">
+              <h5 class="card-title">Phone Number</h5>
+              <p class="card-text">Call or text me at (860) 713-4414</p>
+            </div>
+          </div>
+        </div>
+        </div>
+  
+
+
+      <!-- Buttons -->
       
         <button class="button btn-light col-md-2" id="button1" onclick="showAboutMe()">About Caitlin</button>
         <button class="button btn-light col-md-2" id="button2" onclick="showPortfolio()">Caitlin's Portfolio</button>
-        <button class="button btn-light col-md-2" id="button3">Contact Caitlin</button>
+        <button class="button btn-light col-md-2" id="button3" onclick="showContact()">Contact Caitlin</button>
       </div>
     </div>
-    <!-- <div class="card-deck">
-      <div class="col-md-4 col-sm-12">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="..."> -->
-    <!-- <div class="card-body">
-      <h5 class="card-title">Who is Caitlin White?</h5>
-      <p class="card-text"><button class="btn" id="about-me">Click here to learn more!</button></p> -->
-      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-     
-    <!-- </div>
-  </div>
-      </div>
-      <div class="col-md-4 col-sm-12">
-  <div class="card"> -->
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <!-- <div class="card-body">
-      <h5 class="card-title">What has she done?</h5>
-      <p class="card-text"><button class="btn">Click here to view Caitlin's Portfolio!</button></p> -->
-      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-    <!-- </div>
-  </div>
-</div>
-  <div class="col-md-4 col-sm-12">
-  <div class="card"> -->
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
-    <!-- <div class="card-body">
-      <h5 class="card-title">How can I contact her?!</h5>
-      <p class="card-text"><button class="btn">Click here to email Caitlin!</button></p> -->
-      <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-    <!-- </div>
-  </div>
-</div>
-</div> --> 
-    <!-- <nav class="navigation-bar navbar navbar-expand-lg navbar-transparent" >
-      
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html" style="color: #eeeeee">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about" style="color: #eeeeee">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio" style="color: #eeeeee">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact"style="color: #eeeeee">Contact Me</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-      <div class="container">
-        <img class="headshot" src="./pictures/Caitlin Photo Cropped.png" />
-        <h1 class="name display-4">Caitlin White</h1>
-        <p class="name-description lead">
-          Full-stack Software Engineer with 3 years of experience
-        </p>
-      </div>
-      <div class="about card">
-        <div class="card-body">
-          <h3 id="about" class="about-text-head">Who is She?!</h3>
-          <p class="about-text">I am a New England girl who loves hockey, musicals and eating amazing food! I moved from a small town in Connecticut 
-            to South Florida with hopes of starting a new life, and that's exactly what I'm doing. I am undergoing a huge career change, starting with completing University
-            of Miami's coding bootcamp. I am currently a wine and spirits salesman, and YES I would be happy to give you a great recommendation for a
-            wine to bring to your next dinner party.
-          </p>
-        </div>
-      </div>
-      <div class="portfolio card">
-        <div class="card-body">
-          <h3 id="portfolio"class="portfolio-text-head">Let's Check out her Work...</h3>
-          <p class="portfolio-text">Please click <a href=portfolio.html>here</a> to view some of the work I completed while studying at University of Miami. In my portfolio,
-            you will find a National Park Finder, a website for my pet rats (yes, you read that correctly..I have 3 pet rats!), and ***insert more
-            projects here once completed***. I have rigorously studied HTML, CSS, and JavaScript and I am working hard to become an
-            employer-competitive Full Stack Developer.
-          </p>
-        </div>
-      </div>
-      <div class="contact card">
-        <div class="card-body">
-          <h3 id="contact" class="contact-text-head">I Need to Talk to Her!!</h3>
-          <p class="contact-text">Don't worry! I am happy to answer any questions or concerns, and would love to chat. Please send me an email
-            if you would like to hear more about my experience! Feel free to check out my GitHub to see more of what I 
-            can do!
-          </p>
-        </div>
-      </div>
-    
-      <footer class="footer mt-auto py-3">
-        <div class="container">
-          <span >Caitlin Rita White</span>
-        </div>
-      </footer> -->
     
 
     <!-- Optional JavaScript -->

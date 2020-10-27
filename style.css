@@ -66,6 +66,7 @@ body {
     font-family: 'EB Garmamond', serif;
     height: 50px;
     font-weight: bold;
+    margin-top: 2px;
 }
 
 #home-button {
@@ -78,7 +79,7 @@ body {
 
 .images {
     margin-bottom: 10px;
-    width: 85%;
+    width: 90%;
     height: auto;
 }
 
@@ -98,7 +99,7 @@ body {
     color: black;
     font-family: 'EB Garamond', serif;
     margin-bottom: 20px;
-    width: 45%;
+   
 }
 .portfolio-item {
     color: black;

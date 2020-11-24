@@ -42,6 +42,13 @@ body {
 
 }
 
+.portfolio-description {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: #0f0f0f;
+    font-family: 'EB Garamond', serif;
+}
+
 #about-info {
     margin-top: -8px;
 }
@@ -76,6 +83,7 @@ body {
     height: 40px;
     font-weight: bold;
     margin-top: 5px;
+    width: 100px;
 }
 
 .images {
@@ -83,6 +91,8 @@ body {
     width: 100%;
     height: auto;
 }
+
+
 
 .navigation-bar{
    font-family: 'Open Sans Condensed', sans-serif;

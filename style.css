@@ -80,7 +80,7 @@ body {
 
 .images {
     margin-bottom: 10px;
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
@@ -122,9 +122,9 @@ body {
      margin-bottom: 10px;
  }
  .contact-images {
-     height: 220px;
-     width: 220px;
-     margin-left: 15%;
+     height: auto;
+     width: 80%;
+     margin-left: 8%;
  }
 
  .github {

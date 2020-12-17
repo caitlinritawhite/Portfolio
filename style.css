@@ -114,6 +114,7 @@ body {
 }
 .portfolio-item {
     color: black;
+    
 }
 .portfolio-item:hover {
     color: black;
@@ -123,6 +124,14 @@ body {
 .portfolio-item:visited{
     color: black;
     text-decoration: none;
+}
+.portfolio-content{
+    color:black;
+    font-size: 15px;
+}
+.portfolio-content:visited{
+    color:black;
+    font-size: 15px;
 }
  .contact-cards {
      margin-right: 10px;
